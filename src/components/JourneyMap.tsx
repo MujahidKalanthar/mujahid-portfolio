@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { MapPin, Compass, Navigation, Award, Download, ExternalLink, X, Image as ImageIcon, Plus, Minus, RotateCcw } from 'lucide-react';
 import { CITIES_DATA, ALL_COMPETITIONS, CityLocation, FullCompetition } from '../data/competitionsData';
 import { EVENT_PHOTOS } from '../data/portfolioData';
-import { REGIONAL_COUNTRIES, INDIA_STATES } from '../data/geoMapPaths';
+import { REGIONAL_COUNTRIES, INDIA_OUTLINE } from '../data/geoMapPaths';
 
 export const JourneyMap: React.FC = () => {
   const [selectedCity, setSelectedCity] = useState<CityLocation | null>(CITIES_DATA.find(c => c.id === 'hyderabad') || CITIES_DATA[0]);
@@ -121,7 +121,7 @@ export const JourneyMap: React.FC = () => {
               style={{
                 position: 'relative',
                 width: '100%',
-                height: '420px',
+                height: '440px',
                 background: 'rgba(10, 14, 22, 0.7)',
                 borderRadius: '12px',
                 border: '1px solid rgba(255, 255, 255, 0.08)',
@@ -202,33 +202,31 @@ export const JourneyMap: React.FC = () => {
 
                 {/* Accurate SVG Country & Coastline Outlines (Saudi Arabia & India + States) */}
                 <svg viewBox="0 0 1000 580" width="100%" height="100%" style={{ position: 'absolute', inset: 0, pointerEvents: 'none' }}>
-                  {/* Regional Countries (Pakistan, Nepal, Bangladesh, Sri Lanka, UAE, Oman, Yemen, Qatar, etc.) */}
+                  {/* Regional Countries (UAE, Oman, Yemen, Qatar, Kuwait, Iran, Iraq, Afghanistan, Nepal, Bangladesh, Sri Lanka, etc.) */}
                   {REGIONAL_COUNTRIES.map((c) => (
                     <path
                       key={c.id}
                       d={c.path}
-                      fill={c.isSaudi ? 'rgba(245, 158, 11, 0.08)' : c.isIndia ? 'rgba(245, 158, 11, 0.09)' : 'rgba(255, 255, 255, 0.015)'}
-                      stroke={c.isSaudi ? '#f59e0b' : c.isIndia ? '#f59e0b' : 'rgba(245, 158, 11, 0.22)'}
-                      strokeWidth={c.isSaudi ? '1.8' : c.isIndia ? '2.4' : '1'}
+                      fill={c.isSaudi ? 'rgba(245, 158, 11, 0.08)' : 'rgba(255, 255, 255, 0.015)'}
+                      stroke={c.isSaudi ? '#f59e0b' : 'rgba(245, 158, 11, 0.22)'}
+                      strokeWidth={c.isSaudi ? '1.8' : '1'}
                       strokeDasharray={c.isSaudi ? '4 2' : undefined}
                     />
                   ))}
 
-                  {/* Accurate Indian State Boundaries */}
-                  {INDIA_STATES.map((st, i) => (
+                  {/* India Complete National Outline & Fill */}
+                  {INDIA_OUTLINE && (
                     <path
-                      key={i}
-                      d={st.path}
-                      fill="none"
-                      stroke="rgba(245, 158, 11, 0.22)"
-                      strokeWidth="0.8"
-                      strokeDasharray="3 3"
+                      d={INDIA_OUTLINE}
+                      fill="rgba(245, 158, 11, 0.09)"
+                      stroke="#f59e0b"
+                      strokeWidth="2.2"
                     />
-                  ))}
+                  )}
 
                   {/* Country Labels */}
-                  <text x="175" y="270" fill="#f59e0b" fontSize="13" fontFamily="var(--font-mono)" letterSpacing="3" opacity="0.85">SAUDI ARABIA</text>
-                  <text x="700" y="320" fill="#f59e0b" fontSize="18" fontFamily="var(--font-mono)" letterSpacing="6" opacity="0.85">INDIA</text>
+                  <text x="210" y="270" fill="#f59e0b" fontSize="13" fontFamily="var(--font-mono)" letterSpacing="3" opacity="0.85">SAUDI ARABIA</text>
+                  <text x="690" y="320" fill="#f59e0b" fontSize="18" fontFamily="var(--font-mono)" letterSpacing="6" opacity="0.85">INDIA</text>
                 </svg>
 
                 {/* Connecting Flight/Journey Route Lines */}

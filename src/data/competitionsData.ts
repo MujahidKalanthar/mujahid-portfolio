@@ -23,20 +23,20 @@ export interface CityLocation {
 }
 
 export const CITIES_DATA: CityLocation[] = [
-  { id: 'riyadh', name: 'Riyadh', subtitle: 'Saudi Arabia · QTC Software Dev Intern', coordinates: { x: 19.46, y: 41.51 }, eventsCount: 1, podiumsCount: 0, isInternship: true },
-  { id: 'prayagraj', name: 'Prayagraj', subtitle: 'MNNIT Allahabad · Education & Case Clash', coordinates: { x: 72.41, y: 39.51 }, eventsCount: 2, podiumsCount: 1 },
-  { id: 'hyderabad', name: 'Hyderabad', subtitle: 'NMIMS Hyderabad · 5 Competitions', coordinates: { x: 67.43, y: 61.35 }, eventsCount: 5, podiumsCount: 4 },
-  { id: 'delhi', name: 'New Delhi', subtitle: 'SRCC, DDUC, IIT Delhi, SSCBS, MCD', coordinates: { x: 65.55, y: 30.52 }, eventsCount: 8, podiumsCount: 0 },
-  { id: 'jaipur', name: 'Jaipur', subtitle: 'LNMIIT · Ideathon Finalist', coordinates: { x: 63.48, y: 35.39 }, eventsCount: 1, podiumsCount: 0 },
-  { id: 'jammu', name: 'Jammu', subtitle: 'IIT Jammu · Pitchers 4.0 Finalist', coordinates: { x: 62.14, y: 18.52 }, eventsCount: 1, podiumsCount: 0 },
-  { id: 'patna', name: 'Patna', subtitle: 'IIT Patna · CaseCrux & Pitch It Up', coordinates: { x: 77.24, y: 39.06 }, eventsCount: 2, podiumsCount: 0 },
-  { id: 'chennai', name: 'Chennai', subtitle: 'IIT Madras · Startup Series & Product Construct', coordinates: { x: 70.04, y: 72.64 }, eventsCount: 2, podiumsCount: 0 },
-  { id: 'bengaluru', name: 'Bengaluru', subtitle: 'IISc Bangalore · Pravega Innovation Summit', coordinates: { x: 66.14, y: 72.93 }, eventsCount: 1, podiumsCount: 0 },
-  { id: 'kanpur', name: 'Kanpur', subtitle: 'IIT Kanpur · Vittraj Finance Competition', coordinates: { x: 70.18, y: 36.67 }, eventsCount: 1, podiumsCount: 0 },
-  { id: 'kolkata', name: 'Kolkata', subtitle: 'IIM Calcutta · Product Alchemy', coordinates: { x: 81.97, y: 47.38 }, eventsCount: 1, podiumsCount: 0 },
-  { id: 'pune', name: 'Pune', subtitle: 'SIBM Pune · Strategia', coordinates: { x: 60.67, y: 58.33 }, eventsCount: 1, podiumsCount: 0 },
-  { id: 'kashipur', name: 'Kashipur', subtitle: 'IIM Kashipur · Arthart & Arthashastra', coordinates: { x: 68.19, y: 28.77 }, eventsCount: 2, podiumsCount: 0 },
-  { id: 'lucknow', name: 'Lucknow', subtitle: 'IIM Lucknow · Investwise 2025-26', coordinates: { x: 71.09, y: 35.51 }, eventsCount: 1, podiumsCount: 0 },
+  { id: 'riyadh', name: 'Riyadh', subtitle: 'Saudi Arabia · QTC Software Dev Intern', coordinates: { x: 23.4, y: 43.76 }, eventsCount: 1, podiumsCount: 0, isInternship: true },
+  { id: 'prayagraj', name: 'Prayagraj', subtitle: 'MNNIT Allahabad · Education & Case Clash', coordinates: { x: 71.82, y: 41.87 }, eventsCount: 2, podiumsCount: 1 },
+  { id: 'hyderabad', name: 'Hyderabad', subtitle: 'NMIMS Hyderabad · 5 Competitions', coordinates: { x: 67.19, y: 62.42 }, eventsCount: 5, podiumsCount: 4 },
+  { id: 'delhi', name: 'New Delhi', subtitle: 'SRCC, DDUC, IIT Delhi, SSCBS, MCD', coordinates: { x: 65.43, y: 33.4 }, eventsCount: 8, podiumsCount: 0 },
+  { id: 'jaipur', name: 'Jaipur', subtitle: 'LNMIIT · Ideathon Finalist', coordinates: { x: 63.47, y: 37.96 }, eventsCount: 1, podiumsCount: 0 },
+  { id: 'jammu', name: 'Jammu', subtitle: 'IIT Jammu · Pitchers 4.0 Finalist', coordinates: { x: 62.19, y: 22.04 }, eventsCount: 1, podiumsCount: 0 },
+  { id: 'patna', name: 'Patna', subtitle: 'IIT Patna · CaseCrux & Pitch It Up', coordinates: { x: 76.35, y: 41.45 }, eventsCount: 2, podiumsCount: 0 },
+  { id: 'chennai', name: 'Chennai', subtitle: 'IIT Madras · Startup Series & Product Construct', coordinates: { x: 69.65, y: 73.0 }, eventsCount: 2, podiumsCount: 0 },
+  { id: 'bengaluru', name: 'Bengaluru', subtitle: 'IISc Bangalore · Pravega Innovation Summit', coordinates: { x: 65.96, y: 73.27 }, eventsCount: 1, podiumsCount: 0 },
+  { id: 'kanpur', name: 'Kanpur', subtitle: 'IIT Kanpur · Vittraj Finance Competition', coordinates: { x: 69.73, y: 39.19 }, eventsCount: 1, podiumsCount: 0 },
+  { id: 'kolkata', name: 'Kolkata', subtitle: 'IIM Calcutta · Product Alchemy', coordinates: { x: 80.79, y: 49.31 }, eventsCount: 1, podiumsCount: 0 },
+  { id: 'pune', name: 'Pune', subtitle: 'SIBM Pune · Strategia', coordinates: { x: 60.82, y: 59.58 }, eventsCount: 1, podiumsCount: 0 },
+  { id: 'kashipur', name: 'Kashipur', subtitle: 'IIM Kashipur · Arthart & Arthashastra', coordinates: { x: 67.84, y: 31.78 }, eventsCount: 2, podiumsCount: 0 },
+  { id: 'lucknow', name: 'Lucknow', subtitle: 'IIM Lucknow · Investwise 2025-26', coordinates: { x: 70.58, y: 38.14 }, eventsCount: 1, podiumsCount: 0 },
 ];
 
 export const ALL_COMPETITIONS: FullCompetition[] = [

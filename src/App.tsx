@@ -14,6 +14,7 @@ import { AboutSection } from './components/AboutSection';
 import { ContactFooter } from './components/ContactFooter';
 import { RecruiterModal } from './components/RecruiterModal';
 import { ProjectDetailModal } from './components/ProjectDetailModal';
+import { WelcomeIntro } from './components/WelcomeIntro';
 import { Project } from './data/portfolioData';
 
 export const App: React.FC = () => {
@@ -22,6 +23,9 @@ export const App: React.FC = () => {
 
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+      {/* Cinematic Archive Welcome / Opening Experience */}
+      <WelcomeIntro />
+
       {/* Editorial Sticky Navbar */}
       <Navbar onOpenRecruiter={() => setIsRecruiterOpen(true)} />
 
